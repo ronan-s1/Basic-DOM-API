@@ -1,0 +1,18 @@
+body {
+    background-image: url("bg.jpg");
+}
+
+.container {
+    background-color: rgba(248, 239, 152, 0.88);
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 40px !important;
+}
+
+h1 {
+    margin-bottom: 30px !important;
+}
+
+.card {
+    margin: 9px;
+}
