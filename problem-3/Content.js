@@ -29,7 +29,7 @@ function changeImages() {
 }
 changeImages();
 
-// call the func every 3 seconds
+// call the func every second
 setInterval(changeImages, 1000);
 
 //do the same for h1 elements
@@ -61,9 +61,8 @@ setInterval(() => {
 }, 1000);
 
 
-// get a random cat fact and alert it
-let canFetchFact = true; // Flag to control fetching
-
+// get a random cat fact and alert it every 7 seconds approx
+let canFetchFact = true;
 async function fetchCatFact() {
     try {
         if (canFetchFact) {
@@ -78,7 +77,7 @@ async function fetchCatFact() {
                 canFetchFact = false;
                 setTimeout(() => {
                     canFetchFact = true;
-                }, 5000);
+                }, 6000);
             } else {
                 console.error("No fact field in response :(");
             }
