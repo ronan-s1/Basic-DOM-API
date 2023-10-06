@@ -58,7 +58,7 @@ function getRandomColour() {
 document.body.style.transition = "background-color 0.3s";
 setInterval(() => {
     document.body.style.backgroundColor = getRandomColour();
-}, 100);
+}, 1000);
 
 
 // get a random cat fact and alert it
@@ -72,7 +72,7 @@ async function fetchCatFact() {
 
             if (data.fact) {
                 await new Promise((resolve) => setTimeout(resolve, 0));
-                alert("**!!! CAT FACT TIME !!!**\n\n" + data.fact);
+                alert("**😱 CAT FACT TIME 😱**\n\n" + data.fact);
 
                 // Disable fetching for the next 5 seconds
                 canFetchFact = false;
@@ -89,7 +89,3 @@ async function fetchCatFact() {
 }
 
 setInterval(fetchCatFact, 1000);
-
-// Fetch a cat fact every 5 seconds
-setInterval(fetchCatFact, 5000);
-
