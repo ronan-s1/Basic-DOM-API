@@ -72,7 +72,7 @@ async function fetchCatFact() {
 
             if (data.fact) {
                 await new Promise((resolve) => setTimeout(resolve, 0));
-                alert("**😱 CAT FACT TIME 😱**\n\n" + data.fact);
+                alert("😱 CAT FACT TIME 😱\n\n" + data.fact);
 
                 // Disable fetching for the next 5 seconds
                 canFetchFact = false;
